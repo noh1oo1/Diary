@@ -24,6 +24,20 @@ img {
 body {
 	color: #333;
 	background-color: #fff;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* 스크롤바 설정 */
+body::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+}
+
+/* 스크롤바 막대 설전 */
+body::-webkit-scrollbar-thumb {
+    background-color: #bfc6d2;
+	/* 스크롤바 둥글게 설정 */
+    border-radius: 4px;
 }
 
 table {
@@ -32,7 +46,7 @@ table {
 	border-collapse: collapse;
 }
 .inner{
-	width: 1600px;
+	width: 1800px;
 	margin: 0 auto;
 }
 
@@ -48,7 +62,7 @@ table {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 50px;
+	height: 42px;
 	width: 100%;
 	background: rgb(0, 116, 255);
 }
@@ -162,6 +176,7 @@ table {
   line-height: 60px;
   color: #fff;
   display: block;
+  font-size: 20px;
 }
 
 .search-wrap input{
@@ -192,7 +207,7 @@ table {
   color: #fff;
   font-size: 35px;
   font-weight: 600;
-  padding: 0 0 60px 40px;
+  padding: 0 0 60px 16px;
 }
 
 
@@ -245,6 +260,7 @@ table {
 .card .card-footer figure:nth-child(2){
 	display: flex;
 	align-items: center;
+	color: rgb(124 132 132);
 }
 
 .card .card-footer figure:nth-child(2) i{
