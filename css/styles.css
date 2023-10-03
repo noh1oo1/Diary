@@ -102,6 +102,14 @@ table {
 
 .sec_header ul li a{
 	color: #000;
+  position: relative;
+  top: 0px;
+  top: 1s;
+  transition: all 0.3s;
+}
+
+.sec_header ul li a:hover {
+  top: -5px;
 }
 
 /* 오른쪽하나 */
@@ -163,20 +171,38 @@ table {
   color: #0D0C26;
 }
 
-.banner-top p{
+.banner-box{
 	display: flex;
 	justify-content: center;
 }
-.banner-top p .subfind {
+
+.banner-box p .subfind {
   width: 200px;
   height: 60px;
-  background-color: rgb(0, 116, 255);
+  background: linear-gradient(148deg,#6737ff,#2841fe);
   border-radius: 50px;
   text-align: center;
   line-height: 60px;
   color: #fff;
   display: block;
   font-size: 20px;
+  font-weight: bold;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0px);
+  }
+
+  100% {
+    transform: translateX(4px);
+  }
+}
+
+.banner-box a > i {
+  margin-left: 5px;
+  animation: move .5s linear alternate infinite;
+
 }
 
 .search-wrap input{
@@ -230,15 +256,15 @@ table {
 	padding: 15px;
 }
 .card .card-body{
-    padding: 0 15px;
-    font-size: 16px;
-    height: 137px;
+  padding: 0 15px;
+  font-size: 16px;
+  height: 137px;
 	/* 중요한 것 */
-    text-overflow: ellipsis;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 7;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 7;
 }
 .card .card-footer{
 	display: flex;
